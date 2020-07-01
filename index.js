@@ -6,6 +6,7 @@ document.getElementById("view").addEventListener("click", function (){
 
 
 function abc(){
+	document.querySelector(".img .box").style.display="none";
    	document.querySelector(".flip").style.transform="rotateX(180deg)";
     document.querySelector(".header .right").style.opacity="0";
    	document.querySelector(".other").style.transform="rotateX(180deg)";
