@@ -10,8 +10,7 @@
 	 transition: transform 2s;
 	transform-style: preserve-3d;
 	position:relative;
-	webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
+	
 
 	
 	
@@ -314,9 +313,7 @@ body
 	 transition: transform 2s;
 	transform-style: preserve-3d;
 	position:relative;
-	webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-
+	
 	
 	
 }
