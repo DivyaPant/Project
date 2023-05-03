@@ -1,0 +1,36 @@
+/*Adding Fonts*/
+@font-face {
+  font-family: "Tele-GroteskUlt-Next";
+  src: local("t036018t"),
+    url(./assets/fonts/telegrotesknext-ultra.woff) format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Tele-GroteskNor-Regular";
+  src: local("t036013t"), url(./assets/fonts/t036013t.ttf) format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Tele-GroteskUlt-Bold";
+  src: local("t036018t"),
+    url(./assets/fonts/telegrotesknext-ultra.ttf) format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "helvetica";
+  src: local("t036018t"), url(./assets/fonts/Helvetica.ttf) format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "helvetica-bold";
+  src: local("t036018t"), url(./assets/fonts/Helvetica.ttf) format("truetype");
+  font-weight: bold;
+}
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

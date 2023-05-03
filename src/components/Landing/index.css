@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+@media screen and (max-width: 1080px){
+	.main>.flip
+{
+	width:100%;
+	 height: 100%;
+	 transition: transform 1.25s;
+	transform-style: preserve-3d;
+	position:relative;
+	
+
+	
+	
+}
+   
+   .main>.flip>.img
+{
+     width: 100%;
+     height: 100vh;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main>.flip>.img>img
+{
+	width: 100%;
+	height:50rem;
+	position: absolute;
+}
+.main>.flip>.img>.box
+{
+	
+	z-index: 1;
+}
+.main>.flip>.img>.box>h1,p
+{
+	padding:0;
+	text-align: center;
+	color:white;
+
+}
+.main>.flip>.img>.box>h1
+{
+	font-size: 400%;
+	margin-bottom: 2%;
+}
+.main>.flip>.img>.box>p
+{
+   font-size: 200%;
+   margin-top: 0;
+}
+.main>.flip>.img>.box>button
+{
+   color:white;
+   background:none;
+   font-size: 200%;
+   display: block;
+   margin:auto;
+   padding:1% 3%;
+
+}
+.main>.flip>.img>.box>button:hover
+{
+	cursor: pointer;
+	opacity:0.7;
+	transform: scale(1.25);
+}
+
+}
+@media only screen and (max-width: 640px) and (min-width: 490px){
+
+	.header>.right
+{
+	display:flex;
+    
+	margin-left:3.5%;
+	width:100%;
+
+}
+
+}
+@media only screen and (max-width: 750px) and (min-width: 640px){
+
+	.header>.right
+{
+	display:flex;
+    
+	margin-left:6%;
+	width:100%;
+
+}
+}
+@media only screen and (max-width: 1080px) and (min-width: 750px){
+
+	.header>.right
+{
+	display:flex;
+    
+	margin-left:8%;
+	width:100%;
+
+}
+.main>.flip>.img>.box
+{
+	
+	z-index: 1;
+}
+}
+@media only screen and (max-width: 490px){
+
+  .header>.right
+{
+	display:flex;
+    
+	margin-left:0;
+	width:50%;
+
+}
+.header>.right>h2
+{
+	font-size: 85%;
+	font-family:  'Lato', sans-serif;
+	font-weight: none;
+	padding:1% 4%;
+    
+	z-index: 10;
+	color:white;
+
+}
+}
+@media only screen and (max-width: 490px) {
+   
+.main>.flip>.img>.box
+{
+		z-index: 1;
+}
+	
+   .main>.flip>.other>.about>h1
+{
+	text-align: center;
+	margin-bottom: 4%;
+	padding-top: 4%;
+	color: white;
+	width: 100%;
+
+
+}
+.main>.flip>.other>.about>.me
+{
+	display:block;
+}
+.main>.flip>.other>.about>.me>.right
+{
+	
+  width:90%;
+  
+	
+}
+
+.main>.flip>.other>.about>.me>.right>a
+{
+	 
+	margin-left: 35%;
+	margin-top: 0.5%;
+	margin-bottom: 0.5%;
+	text-decoration: none;
+	color:black;
+	border:  1px solid white;
+	padding:1%;
+	font-size: 150%;
+	position: absolute;
+
+}
+
+
+.main>.flip>.other>.about>.me>.right>.bar
+{
+	width: 100%;
+	background-color:silver;
+	margin:1%;
+	
+	height: 25px;
+	
+
+	
+
+}
+.main>.flip>.other>.about>.me>.right>.bar>.progress
+{
+	background-color: #1455EB;
+	
+	width:0;
+	height:25px;
+	color:white;
+	font-weight: bold;
+	text-align: left;
+	
+
+}
+.main>.flip>.other>.about>.me>.right>.bar>.progress>p
+{
+	padding-top: 1%;
+	padding-left: 15px;
+	margin:0;
+	text-align: left;
+
+}
+
+
+}
+
+
+body
+{
+	margin:0;
+	padding:0;
+	font-family:  'Lato', sans-serif;
+	/*font-family:'Muli', sans-serif;*/
+	overflow-x: hidden;
+
+
+}
+.header
+{
+  width:100%;
+ position: fixed;
+ z-index: 68769;
+ text-transform: uppercase;
+
+
+}
+@media only screen and (min-width: 1080px){
+.header>.right
+{
+	display:flex;
+    flex-direction: reverse;
+	margin-left: 40%;
+	width:100%;
+
+}
+}
+
+@media only screen and (min-width:490px) {
+.header>.right>h2
+{
+	font-family:  'Lato', sans-serif;
+	font-weight: none;
+	padding:1% 4%;
+    font-size: 120%;
+	z-index: 10;
+	color:white;
+
+}
+.header>.right>h2:hover
+{
+	cursor: pointer;
+	padding-bottom: 2%;
+	border-bottom: 2px solid white;
+	opacity: 0.8;
+
+    
+}
+}
+.main
+{
+	display:block;
+	overflow: hidden;
+	
+	
+	width:100%;
+
+	
+    perspective: 2500px;
+
+
+
+}
+.main>.flip
+{
+	width:100%;
+	 height: 100%;
+	 transition: transform 1.25s;
+	transform-style: preserve-3d;
+	position:relative;
+	
+	
+	
+}
+
+
+@media only screen and (min-width: 1080px){
+
+.main>.flip>.img
+{
+     width: 100%;
+     height: 100vh;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+
+   
+}
+.main>.flip>.img>img
+{
+	width: 100%;
+	max-width: 100%;
+	height:100%;
+	position: absolute;
+}
+.main>.flip>.img>.box
+{
+	
+	z-index: 1;
+}
+.main>.flip>.img>.box>h1,p
+{
+	padding:0;
+	text-align: center;
+	color:white;
+
+}
+.main>.flip>.img>.box>h1
+{
+	font-size: 400%;
+	margin-bottom: 2%;
+}
+.main>.flip>.img>.box>p
+{
+   font-size: 200%;
+   margin-top: 0;
+}
+.main>.flip>.img>.box>button
+{
+   color:white;
+   background:none;
+   font-size: 200%;
+   display: block;
+   margin:auto;
+   padding:1% 3%;
+
+}
+.main>.flip>.img>.box>button:hover
+{
+	cursor: pointer;
+	opacity:0.7;
+	transform: scale(1.25);
+}
+}
+
+@media only screen and (min-width: 490px) {
+.main>.flip>.other>.about>h1
+{
+	text-align: center;
+	margin-bottom: 4%;
+	padding-top: 4%;
+	color: white;
+	width: 100%;
+
+}
+.main>.flip>.other>.about>.me
+{
+	display: grid;
+    grid-gap: 4%;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+
+.main>.flip>.other>.about>.me>.right>.bar
+{
+	width: 90%;
+	background-color:silver;
+	margin:1%;
+	
+	height: 30px;
+	
+
+	
+
+}
+.main>.flip>.other>.about>.me>.right>.bar>.progress
+{
+	background-color: #1455EB;
+	
+	width:0;
+	height:30px;
+	color:white;
+	font-weight: bold;
+	text-align: left;
+	
+
+}
+.main>.flip>.other>.about>.me>.right>.bar>.progress>p
+{
+	padding-top: 1%;
+	padding-left: 15px;
+	margin:0;
+	text-align: left;
+
+}
+}
+
+.flip {
+	background-image: url('../../assets/landingBg.jpg');
+	background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.common-background {
+	/* background-color: #fcf1ee; */
+	background-color: white;
+	margin-left: 5rem;
+    padding: 4rem;
+	@media only screen and (max-width: 1024px){
+        margin-left: 0;
+    }
+	@media only screen and (max-width:750px) {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        }
+	@media only screen and (max-width:550px) {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        }
+}

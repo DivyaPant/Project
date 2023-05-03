@@ -1,0 +1,23 @@
+.exp-container {
+    /* background-color: #f6e2e2; */
+    background-color: #fcf1ee;
+    margin-left: 5rem;
+    padding: 4rem;
+    @media only screen and (max-width:750px) {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        }
+    @media only screen and (max-width:550px) {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        }
+}
+.exp-description {
+    display: flex;
+    flex-direction: column;
+}
+.exp-box {
+    width: 10rem;
+    height: 10rem;
+    background-color: aquamarine;
+}

@@ -1,0 +1,140 @@
+
+.work
+{
+	text-align: center;
+}
+
+.work>.myProjects
+{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 3rem auto;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.projBox
+{
+	/* padding: 1rem; */
+    text-align: center;
+    width: 20rem;
+    /* width: 25%; */
+    height: 18rem;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-grow: 1; */
+    position: relative;
+    margin: 1rem 0.5rem;
+    @media only screen and (max-width:780px) {
+        flex-grow: 1;
+        height: 20rem;
+    }
+    @media only screen and (max-width:425px) {
+        height: 15rem;
+    }
+    @media only screen and (max-width:425px) {
+        height: 13.5rem;
+    }
+}
+
+.view-container {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity .3s ease-in;
+    height: 100%;
+}
+.projBox:hover .content{
+    animation: scaleAnimation 0.3s ease-in;
+}
+@keyframes scaleAnimation {
+    0% {
+        transform: scale(1)
+      }
+      100% {
+        transform: scale(1.125)
+      }
+    }
+.projBox:hover .view-container {
+    display: flex;
+    z-index: 4;
+}
+.view-container:hover {
+    opacity: 1;
+}
+
+.img-container {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.img-container img, .view-container img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 24px;
+}
+.view {
+    box-sizing: border-box;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
+    padding: 0 1rem;
+}
+.view-btn {
+    width: 8rem;
+    height: 3rem;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    color: white;
+    cursor: pointer;
+    border: 1px solid;
+    transition: all 0.1s ease-out;
+}
+.view a {
+    color: inherit;
+    text-decoration: none;
+}
+.view-content {
+    color: white;
+}
+.view-btn:hover {
+    color: black;
+    background-color: white;
+    font-weight: bold;
+}
+
+.overlay {
+    display: flex;
+    z-index: 2;
+    background-color: rgb(20 28 58 / 85%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
+    color: white;
+}
+.content-heading {
+    font-size: 1.5rem;
+}

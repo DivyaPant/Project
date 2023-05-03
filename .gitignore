@@ -1,0 +1,10 @@
+app/node_modules/
+node_modules/
+app/package-lock.json
+package-lock.json
+app/build
+app/.env
+yarn.lock
+app/yarn.lock
+/dist
+/build

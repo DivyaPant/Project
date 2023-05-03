@@ -1,0 +1,136 @@
+
+.resume-header
+{
+	padding:1rem;
+	
+}
+
+.resume-header>a>i
+{
+	padding-left: 1rem;
+	font-size:2rem;
+    color:#010a43
+}
+.resume-header>div> i
+{
+	margin-right: 1rem;
+	font-size:1.875rem;
+    color:#010a43;
+    cursor: pointer;
+}
+
+.resume-main
+{
+   background-color: #f1f1f1;
+   display:flex;
+}
+
+.resume-left
+{
+  width:30%;
+  padding:1rem;
+  
+}
+.resume-box
+{
+	background-color: white;
+	box-shadow: 2px 2px 2px 2px #010a43;
+	border-radius: 20px 20px 20px 20px;
+}
+.summary
+{
+	
+	padding:1rem;
+	box-shadow: 2px 2px 2px 2px #010a43;
+	border-radius: 20px 20px 20px 20px;
+	background-color: white;
+}
+.resume-box h2
+{
+	color: #010a43;
+	
+}
+.summary> p
+{
+    color: black;
+    text-align: left;
+}
+.resume-contact {
+    display: flex;
+    flex-direction: column;
+    padding:1rem;
+}
+.resume-contact > span {
+	padding:1rem 0;
+}
+.resume-contact i
+{
+padding-right:1rem;
+	color:#010a43;
+    width: 20px;
+    font-size: 1.25rem;
+
+}
+.common-box-padding {
+    padding: 1rem;
+    margin-top: 1rem;
+}
+.resume-skills-container {
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+.resume-skills-container li {
+    font-size: 1rem;
+    font-weight: normal;
+}
+.main>.left>.leftbox2>.m>button
+{
+	border:0;
+	outline:0;
+}
+
+.resume-right
+{
+  width:70%;
+  padding: 1rem;
+}
+
+
+.text-opacity {
+    opacity: 0.85;
+}
+.resume-languages {
+    padding: 0.25rem 0.5rem;
+    background: #d5d5d5;
+    margin-right: 0.5rem;
+    border-radius: 12px;
+}
+.resume-education p{
+    color: black;
+}
+.resume-experience {
+    font-size: 1.25rem;
+}
+.resume-roles {
+    padding: 1rem 0 0 0;
+    font-size: 1rem;
+ 
+}
+.resume-roles-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.resume-roles-container > span {
+    font-weight: bold;
+}
+.resume-roles .resume-roles-header {
+    
+    font-size: 1.125rem;
+    text-decoration: underline;
+   
+}
+
+.resume-right > .common-box-padding:nth-child(1) {
+    margin-top: 0;
+}

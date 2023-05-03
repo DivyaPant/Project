@@ -1,0 +1,61 @@
+{
+  "name": "react-template",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "env-cmd": "^10.1.0",
+    "font-awesome": "^4.7.0",
+    "html-react-parser": "^3.0.4",
+    "html2pdf.js": "^0.10.1",
+    "jest": "26.6.0",
+    "jest-canvas-mock": "^2.3.1",
+    "jest-html-reporter": "^3.4.0",
+    "moment": "^2.29.1",
+    "prop-types": "^15.7.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.8.2",
+    "react-scripts": "5.0.1",
+    "waait": "^1.0.5"
+  },
+  "scripts": {
+    "start": " react-scripts start",
+    "build": "react-scripts build",
+    "eject": "react-scripts eject",
+    "e2eTest": "react-scripts test newreq --testResultsProcessor ./node_modules/jest-html-reporter --runInBand --no-watchman --forceExit",
+    "unitTests": "react-scripts test  --coverage --watchAll=false --testPathIgnorePatterns e2eTest --runInBand --forceExit"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "jest": {
+    "watchPathIgnorePatterns": [
+      "!src/e2eTest"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!src/e2eTest/**/*.{js,jsx,ts,tsx}",
+      "!src/assets/**/*.{js,jsx,ts,tsx}",
+      "!src/serviceWorker.js",
+      "!src/redux/**/*.{js,jsx,ts,tsx}",
+      "!src/components/graphs/dist/**/*.{js,jsx,ts,tsx}",
+      "!src/components/Login/**/*.{js,jsx,ts,tsx}",
+      "!src/service/**/*.{js,jsx,ts,tsx}",
+      "!src/router/**/*.{js,jsx,ts,tsx}",
+      "!src/components/graphs/index.js",
+      "!src/routers"
+    ]
+  },
+  "devDependencies": {
+    "jest": "^26.6.0"
+  },
+  "jest-html-reporter": {
+    "pageTitle": "E2E Test Report",
+    "outputPath": "test-report.html",
+    "includeFailureMsg": true
+  }
+}
