@@ -8,7 +8,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.Fragment>
-     <BrowserRouter basename={process.env.PUBLIC_URL}>
+     <BrowserRouter basename='/Project'>
       <App />
       </BrowserRouter>
   </React.Fragment>
