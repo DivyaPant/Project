@@ -60,7 +60,7 @@ const About = (props) => {
           </div>
           <div className="image">
             <img src={myImg} alt="img" className="border-radius" />
-            <a href="/resume" target="_blank">
+            <a href="Project/resume" target="_blank">
               Résumé
             </a>
           </div>
