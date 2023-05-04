@@ -23,7 +23,7 @@ const About = (props) => {
           </div>
           <div className="banner-body">
           <div className="resume">
-          <a href="/resume" target="_blank">
+          <a href="Project/resume" target="_blank">
               Résumé
             </a>
           </div>
