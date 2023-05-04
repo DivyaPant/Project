@@ -3,6 +3,7 @@ import myImg from "../../assets/myImg.jpg";
 import TypingEffect from "./typing";
 import check from '../../assets/global-icons/check.svg';
 import "./index.css";
+import { Link } from "react-router-dom";
 
 const About = (props) => {
   const { aboutRef, transitioned } = props;
@@ -23,9 +24,10 @@ const About = (props) => {
           </div>
           <div className="banner-body">
           <div className="resume">
-          <a href="Project/resume" target="_blank">
-              Résumé
-            </a>
+          <Link to={'./resume'} target="_blank"> Résumé</Link>
+          {/* <a href="" target="_blank">
+             
+            </a> */}
           </div>
           <div className="banner-description">
             <div className="left">
@@ -60,9 +62,10 @@ const About = (props) => {
           </div>
           <div className="image">
             <img src={myImg} alt="img" className="border-radius" />
-            <a href="Project/resume" target="_blank">
+            <Link to={'./resume'} target="_blank"> Résumé</Link>
+            {/* <a href="/resume" target="_blank">
               Résumé
-            </a>
+            </a> */}
           </div>
           
           </div>
